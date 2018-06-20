@@ -1,0 +1,26 @@
+import PlaygroundSupport
+import SpriteKit
+import Metal
+import MetalKit
+import simd
+
+
+struct SCNNodeFrameConstantRow {
+    var row : Int = 0
+    var offset : Int = 0
+    var modelViewTransform : float4x4 = float4x4()
+    var modelViewProjectionTransform : float4x4 = float4x4()
+    var inverseModelViewProjectionTransform : float4x4 = float4x4()
+}
+
+struct VertexAttributeRow {
+    var index : Int = 0
+    var vertex : Int = 0
+    var position : float3 = float3()
+    var normal : float3 = float3()
+    var texcoord0 : float2 = float2()
+    var fragmentPosition : float4 = float4()
+    var outPosition : float3 = float3()
+    var outTexcoord0 : float2 = float2()
+}
+
