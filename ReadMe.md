@@ -42,15 +42,5 @@ cat Vertices.tsv | ./extractFrameAttributes.py >> Trace1.playground
 
 
 
-Next open up the vertex attribute buffer in the debugger.
-
-Copy and paste the vertices you are interested in into a new file, let's call it `Vertices.tsv`
-
-Then from the terminal run:
-
-```
-cat Vertices.tsv | ./extractFrameAttributes.py >> Trace1.playground
-```
-
 ## Start playing!
 
