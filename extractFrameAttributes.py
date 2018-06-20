@@ -113,7 +113,7 @@ for rowIndex, row in enumerate(rows):
         if idx == 0:
             if parameter['name'] == 'row':
                 rowName = "row" + str(rowIndex)
-                swiftResults = swiftResults + "\nvar " + rowName + " = SCNNodeFrameConstantRow()\n"
+                swiftResults = swiftResults + "\nvar " + rowName + " = SCNNodeFrameConstantRow(\n"
             else:
                 rowName = "vertex" + str(rowIndex)
                 swiftResults = swiftResults + "\nvar " + rowName + " = VertexAttributeRow(\n"

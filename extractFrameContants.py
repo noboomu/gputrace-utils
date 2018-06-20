@@ -78,7 +78,7 @@ for key, record in results.iteritems():
     if record['type'] == 'Float':
         swiftResults = swiftResults + str(float(values[0])) + ")\n"
     elif record['type'] == 'float2':
-        swiftResults = swiftResults + str(float(values[1])) + "," + str(float(values[1])) + ")\n"
+        swiftResults = swiftResults + str(float(values[0])) + "," + str(float(values[1])) + ")\n"
     elif record['type'] == 'float3':
         swiftResults = swiftResults + str(float(values[0])) + "," + str(float(values[1])) + "," + str(float(values[2])) + ")\n"
     elif record['type'] == 'float4':
